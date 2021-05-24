@@ -7,8 +7,31 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" color="light">
-  <h1 align=center>Dalva Célia Guazzelli</h1>
-  <h4 align=center>Etec Albert Einstein<p></p>
-  <a href="mailto:celia.guazzelli@etec.sp.gov.br">celia.guazzelli@etec.sp.gov.br</a></h4>
-  <img src="https://st2.depositphotos.com/3126965/5282/v/600/depositphotos_52828051-stock-illustration-businesswoman-close-up.jpg" alt="">
-  </ion-content>
+  <ion-searchbar placeholder="Buscar" color="primary" animated></ion-searchbar>
+  <ion-list>
+
+  <ion-item-sliding>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/2NNebYVf8XAbJzVZTM3razRaZKA.jpg">
+      </ion-thumbnail>
+      <ion-label>
+        <div>
+          <h1>Soul</h1>
+          <p>25/12/2020 (TW) 1h 40m</p>
+          <p>Comédia, Música, Fantasia</p>
+        </div>
+      </ion-label>
+      <ion-chip color="success">
+        <ion-label>83%</ion-label>
+      </ion-chip>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option>
+        <ion-icon slot="icon-only" name="star"></ion-icon>
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+  </ion-list>
+</ion-content>
