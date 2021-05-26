@@ -17,6 +17,10 @@ const routes: Routes = [
   {
     path: 'legados',
     loadChildren: () => import('./filmes/legados/legados.module').then( m => m.LegadosPageModule)
+  },
+  {
+    path: 'dados-filme',
+    loadChildren: () => import('./dados-filme/dados-filme.module').then( m => m.DadosFilmePageModule)
   }
 ];
 @NgModule({
