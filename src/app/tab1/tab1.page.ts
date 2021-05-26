@@ -19,7 +19,8 @@ export class Tab1Page {
       duracao:'1h 40m',
       classificacao:83,
       cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/2NNebYVf8XAbJzVZTM3razRaZKA.jpg',
-      generos: ['Comédia, Música, Fantasia']
+      generos: ['Comédia, Música, Fantasia'],
+      pagina:'/soul'
     },
     {
       nome: 'Selena: A Série',
@@ -27,7 +28,8 @@ export class Tab1Page {
       duracao:'40m',
       classificacao: 75,
       cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/j4e3yAAc2sCtK9liKmHNsXVsgoF.jpg',
-      generos: ['Drama']
+      generos: ['Drama'],
+      pagina:'/selena'
     },
     {
       nome: 'Legados',
@@ -35,7 +37,8 @@ export class Tab1Page {
       duracao:'43m',
       classificacao: 86,
       cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/roFJeeBbcFYCaTfmKaCQ7wtCT5l.jpg',
-      generos: ['Drama', 'Fantasia']
+      generos: ['Drama', 'Fantasia'],
+      pagina:'/legados'
     }
   ];
 
