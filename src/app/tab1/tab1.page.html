@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Vídeos App
+      {{titulo}}
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -10,20 +10,24 @@
   <ion-searchbar placeholder="Buscar" color="primary" animated></ion-searchbar>
   <ion-list>
 
-    <ion-item-sliding>
+    <ion-item-sliding *ngFor="let filme of listaVideos">
       <ion-item>
         <ion-thumbnail slot="start">
-          <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/2NNebYVf8XAbJzVZTM3razRaZKA.jpg">
+          <img
+          [src]="filme.cartaz"
+          />
         </ion-thumbnail>
         <ion-label>
           <div>
-            <h1>Soul</h1>
-            <p>25/12/2020 (BR) 1h 40m</p>
-            <p>Comédia, Música, Fantasia</p>
+            <h1>{{filme.nome}}</h1>
+            <p>{{filme.lancamento}} - {{filme.duracao}}</p>
+            <ion-badge color="light" *ngFor="let genero of filme.generos" >
+              {{genero}}
+            </ion-badge>
           </div>
         </ion-label>
         <ion-chip color="success">
-          <ion-label>83%</ion-label>
+          <ion-label>{{filme.classificacao}}%</ion-label>
         </ion-chip>
       </ion-item>
       <ion-item-options side="end">
@@ -33,50 +37,5 @@
       </ion-item-options>
     </ion-item-sliding>
 
-    <ion-item-sliding>
-      <ion-item>
-        <ion-thumbnail slot="start">
-          <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/j4e3yAAc2sCtK9liKmHNsXVsgoF.jpg">
-        </ion-thumbnail>
-        <ion-label>
-          <div>
-            <h1>Selena: A Série (2020)</h1>
-            <p>20/10/2020 (BR) 40m</p>
-            <p>Drama</p>
-          </div>
-        </ion-label>
-        <ion-chip color="success">
-          <ion-label>75%</ion-label>
-        </ion-chip>
-      </ion-item>
-      <ion-item-options side="end">
-        <ion-item-option color="laranja" (click)="exibirAlertaFavorito()">
-          <ion-icon slot="icon-only" name="star"></ion-icon>
-        </ion-item-option>
-      </ion-item-options>
-    </ion-item-sliding>
-
-    <ion-item-sliding>
-      <ion-item>
-        <ion-thumbnail slot="start">
-          <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/roFJeeBbcFYCaTfmKaCQ7wtCT5l.jpg">
-        </ion-thumbnail>
-        <ion-label>
-          <div>
-            <h1>Legados (2018)</h1>
-            <p>20/10/2018 (BR) 43m</p>
-            <p>Drama, Fantasia</p>
-          </div>
-        </ion-label>
-        <ion-chip color="success">
-          <ion-label>86%</ion-label>
-        </ion-chip>
-      </ion-item>
-      <ion-item-options side="end">
-        <ion-item-option color="laranja" (click)="exibirAlertaFavorito()">
-          <ion-icon slot="icon-only" name="star"></ion-icon>
-        </ion-item-option>
-      </ion-item-options>
-    </ion-item-sliding>
   </ion-list>
 </ion-content>

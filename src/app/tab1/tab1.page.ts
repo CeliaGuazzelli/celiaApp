@@ -1,3 +1,4 @@
+import { IFilme } from '../models/IFilme.model';
 import { Component } from '@angular/core';
 import { AlertController } from '@ionic/angular';
 import { ToastController } from '@ionic/angular';
@@ -8,6 +9,35 @@ import { ToastController } from '@ionic/angular';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
+
+  titulo = 'Vídeos';
+
+  listaVideos: IFilme[] = [
+    {
+      nome: 'Soul',
+      lancamento: '25/12/2020',
+      duracao:'1h 40m',
+      classificacao:83,
+      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/2NNebYVf8XAbJzVZTM3razRaZKA.jpg',
+      generos: ['Comédia, Música, Fantasia']
+    },
+    {
+      nome: 'Selena: A Série',
+      lancamento: '20/10/2020',
+      duracao:'40m',
+      classificacao: 75,
+      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/j4e3yAAc2sCtK9liKmHNsXVsgoF.jpg',
+      generos: ['Drama']
+    },
+    {
+      nome: 'Legados',
+      lancamento: '20/10/2018',
+      duracao:'43m',
+      classificacao: 86,
+      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/roFJeeBbcFYCaTfmKaCQ7wtCT5l.jpg',
+      generos: ['Drama', 'Fantasia']
+    }
+  ];
 
   constructor(public alertController: AlertController,public toastController: ToastController) {}
 
