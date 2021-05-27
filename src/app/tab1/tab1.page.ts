@@ -41,6 +41,24 @@ export class Tab1Page {
       cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/roFJeeBbcFYCaTfmKaCQ7wtCT5l.jpg',
       generos: ['Drama', 'Fantasia'],
       pagina:'/legados'
+    },
+    {
+      nome: 'Monster Hunter',
+      lancamento: '25/02/2021',
+      duracao:'1h 43m',
+      classificacao: 71,
+      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/Am1ipOQiOMrH55tCCT2ObNiF1rW.jpg',
+      generos: ['Ação', 'Aventura', 'Fantasia'],
+      pagina:'/legados'
+    },
+    {
+      nome: 'Eu Acredito',
+      lancamento: '07/11/2017',
+      duracao:'1h 29m',
+      classificacao: 68,
+      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/2xtqkht2u7SkrZPd6zyMRymE4nt.jpg',
+      generos: ['Família'],
+      pagina:'/legados'
     }
   ];
 
