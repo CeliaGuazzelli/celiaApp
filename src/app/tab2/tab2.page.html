@@ -9,6 +9,7 @@
 <ion-content [fullscreen]="true">
   <ion-searchbar placeholder="Buscar Série"></ion-searchbar>
   <ion-list>
+    <ion-item-sliding>
     <ion-item lines="full">
       <ion-thumbnail slot="start">
         <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/mQ9cyw1gfpK1M3a69cgXFHvWkih.jpg">
@@ -19,12 +20,64 @@
           <p>Idade: 16 anos</p>
           <p>Fantasy, Drama, Adventure</p>
           <p>Duração 1h</p>
-        </div>        
+        </div>
       </ion-label>
       <ion-chip color="success" outline>
-        <ion-label>84%</ion-label>
+        <ion-label>86%</ion-label>
       </ion-chip>
     </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option>
+        <ion-icon slot="icon-only" name="star"></ion-icon>
+      </ion-item-option>
+    </ion-item-options>
+    </ion-item-sliding>
+    <ion-item-sliding>
+      <ion-item lines="full">
+        <ion-thumbnail slot="start">
+          <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/f496cm9enuEsZkSPzCwnTESEK5s.jpg">
+        </ion-thumbnail>
+        <ion-label class="ion-text-wrap">
+          <div>
+            <h1>Friends (1994)</h1>
+            <p>Idade: 12 anos</p>
+            <p>Comedy, Drama</p>
+            <p>Duração 25m</p>
+          </div>
+        </ion-label>
+        <ion-chip color="success" outline>
+          <ion-label>84%</ion-label>
+        </ion-chip>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option>
+          <ion-icon slot="icon-only" name="star"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+    <ion-item-sliding>
+        <ion-item lines="full">
+          <ion-thumbnail slot="start">
+            <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/d1ZcT5tHzUeQ7zgYecOVoWxH9FL.jpg">
+          </ion-thumbnail>
+          <ion-label class="ion-text-wrap">
+            <div>
+              <h1>O Mentalista (2008)</h1>
+              <p>Idade: 14 anos</p>
+              <p>Crime, Drama, Mistery</p>
+              <p>Duração 43m</p>
+            </div>
+          </ion-label>
+          <ion-chip color="success" outline>
+            <ion-label>87%</ion-label>
+          </ion-chip>
+        </ion-item>
+        <ion-item-options side="end">
+          <ion-item-option>
+            <ion-icon slot="icon-only" name="star"></ion-icon>
+          </ion-item-option>
+        </ion-item-options>
+    </ion-item-sliding>
 
   </ion-list>
 </ion-content>
