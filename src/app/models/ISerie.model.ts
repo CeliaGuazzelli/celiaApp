@@ -5,4 +5,5 @@ export interface ISerie {
   sclass: number;
   scartaz: string;
   sgeneros: string[];
+  spagina?: string;
 }

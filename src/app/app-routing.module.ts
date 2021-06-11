@@ -26,7 +26,35 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
-  }
+  },
+  {
+    path: 'series',
+    loadChildren: () => import('./series/series.module').then( m => m.SeriesPageModule)
+  },
+  {
+    path: 'friends',
+    loadChildren: () => import('./series/friends/friends.module').then( m => m.FriendsPageModule)
+  },
+  {
+    path: 'game-of-trones',
+    loadChildren: () => import('./series/game-of-trones/game-of-trones.module').then( m => m.GameOfTronesPageModule)
+  },
+  {
+    path: 'omentalista',
+    loadChildren: () => import('./series/omentalista/omentalista.module').then( m => m.OMentalistaPageModule)
+  },
+  {
+    path: 'lista-negra',
+    loadChildren: () => import('./series/lista-negra/lista-negra.module').then( m => m.ListaNegraPageModule)
+  },
+  {
+    path: 'the-flash',
+    loadChildren: () => import('./series/the-flash/the-flash.module').then( m => m.TheFlashPageModule)
+  },
+  {
+    path: 'sou-luna',
+    loadChildren: () => import('./series/sou-luna/sou-luna.module').then( m => m.SouLunaPageModule)
+  },
 ];
 @NgModule({
   imports: [
