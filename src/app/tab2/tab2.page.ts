@@ -1,7 +1,9 @@
+import { DadosService } from './../services/dados.service';
 import { ISerie } from './../models/ISerie.model';
 import { Component } from '@angular/core';
 import { AlertController } from '@ionic/angular';
 import { ToastController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -70,7 +72,16 @@ listaSeries: ISerie[] = [
   }
 ];
 
-  constructor(public alertController: AlertController, public toastController: ToastController) {}
+  constructor(
+    public alertController: AlertController,
+    public toastController: ToastController,
+    public dadosService: DadosService,
+    public route: Router) { }
+
+    exibirSerie(serie: ISerie){
+      this.dadosService.guardarDados('serie', serie);
+      this.route.navigateByUrl('/dados-filme');
+    }
 
   async exibirAlertaFavorito() {
     const alert = await this.alertController.create({
