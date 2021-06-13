@@ -80,7 +80,7 @@ listaSeries: ISerie[] = [
 
     exibirSerie(serie: ISerie){
       this.dadosService.guardarDados('serie', serie);
-      this.route.navigateByUrl('/dados-filme');
+      this.route.navigateByUrl('/dados-serie');
     }
 
   async exibirAlertaFavorito() {

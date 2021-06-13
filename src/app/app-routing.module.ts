@@ -55,6 +55,10 @@ const routes: Routes = [
     path: 'sou-luna',
     loadChildren: () => import('./series/sou-luna/sou-luna.module').then( m => m.SouLunaPageModule)
   },
+  {
+    path: 'dados-serie',
+    loadChildren: () => import('./dados-serie/dados-serie.module').then( m => m.DadosSeriePageModule)
+  },
 ];
 @NgModule({
   imports: [

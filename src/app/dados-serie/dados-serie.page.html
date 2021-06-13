@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Dados da Série</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+  <ion-card *ngIf="serie">
+    <ion-card-header>
+      <img [src]="serie.scartaz" />
+    </ion-card-header>
+
+    <ion-card-content>
+      <h2><b>
+        {{serie.snome}}
+      </b></h2>
+      <h2>{{serie.slancamento}} - {{serie.sduracao}}
+        <ion-chip color="secondary"> {{serie.sclass}}%</ion-chip>
+      </h2>
+    </ion-card-content>
+    <ion-item>
+      <ion-badge color="light" *ngFor="let genero of serie.sgeneros">
+        {{genero}}
+      </ion-badge>
+    </ion-item>
+  </ion-card>
+</ion-content>
